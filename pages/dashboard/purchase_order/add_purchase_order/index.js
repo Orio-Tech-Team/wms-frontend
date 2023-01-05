@@ -224,15 +224,13 @@ const ProductOrder = ({ product_vendor_data, location }) => {
         product_id: item.id,
         required_quantity: item.required_quantity,
         trade_price: item.trade_price,
-        trade_percentage: item.trade_percentage,
+        trade_percentage: item.trade_discount,
         unit_of_measurement: item.unit_of_measurement,
         sales_tax_percentage: item.sales_tax_percentage,
         foc: item.foc,
         total: +item.required_quantity * +item.trade_price,
         discount:
-          (+item.required_quantity *
-            +item.trade_price *
-            item.trade_percentage) /
+          (+item.required_quantity * +item.trade_price * item.trade_discount) /
           100,
         taxed_price:
           (+item.required_quantity *
@@ -517,7 +515,7 @@ const ProductOrder = ({ product_vendor_data, location }) => {
                                 {
                                   item.item_conversion[
                                     item.item_conversion.length - 1
-                                  ]
+                                  ].item_conversion
                                 }
                               </td>
                               <td>{item.unit_of_measurement}</td>

@@ -112,12 +112,13 @@ const CustomTable = ({ data, title, dataCollector }) => {
     var temp = [...orderData];
     temp[row.index] = {
       ...row,
-
+      ...temp[row.index],
       [name]: value,
     };
     var tempData = temp.filter((each_item) => {
       return each_item != undefined;
     });
+    console.log(temp);
     setOrderData([...tempData]);
   };
   const columns = [
@@ -170,7 +171,7 @@ const CustomTable = ({ data, title, dataCollector }) => {
             placeholder="Pick one"
             data={["Box", "Carton", "Pieces"]}
             onChange={(event) => {
-              inputHandler(e.index, "unit_of_measurement", event);
+              inputHandler(e, "unit_of_measurement", event);
             }}
           />
         </>
@@ -189,7 +190,7 @@ const CustomTable = ({ data, title, dataCollector }) => {
             size="xs"
             key={e.id}
             onChange={(event) => {
-              inputHandler(e.index, "trade_price", event.target.value);
+              inputHandler(e, "trade_price", event.target.value);
             }}
           />
         </>
@@ -208,7 +209,7 @@ const CustomTable = ({ data, title, dataCollector }) => {
             size="xs"
             key={e.id}
             onChange={(event) => {
-              inputHandler(e.index, "trade_discount", event.target.value);
+              inputHandler(e, "trade_discount", event.target.value);
             }}
           />
         </>
@@ -226,7 +227,7 @@ const CustomTable = ({ data, title, dataCollector }) => {
           <Switch
             size="xs"
             onChange={(event) => {
-              inputHandler(e.index, "foc", event.target.checked);
+              inputHandler(e, "foc", event.target.checked);
             }}
           />
         </>
@@ -301,6 +302,7 @@ const CustomTable = ({ data, title, dataCollector }) => {
       orderData.map((each_item) => {
         if (each_selected.index === each_item.index) {
           temp.push(each_item);
+          console.log("hello ", each_item);
         }
       });
     });
