@@ -1,0 +1,28 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+  background-color: #f4f5fd;
+}
+
+.container h1 {
+  color: #ff6565;
+  font-size: 3rem;
+}
+
+.container p {
+  font-size: 0.8rem;
+  color: black;
+}
+
+.container a {
+  color: black;
+  text-decoration: underline;
+}
+.container a:hover {
+  color: #ff6565;
+}

@@ -1,0 +1,102 @@
+.data_table * {
+  box-shadow: 0 0 0 0 #fff;
+}
+
+.data_table {
+  margin-top: 20px;
+  border: 1px solid rgb(207, 207, 207);
+  border-radius: 5px;
+}
+
+/*  */
+
+.data_table table:first-child th span {
+  justify-content: center;
+  text-align: center !important;
+}
+
+.data_table table:first-child th span * {
+  justify-content: center;
+  justify-self: center;
+  margin: auto;
+}
+
+.data_table table:first-child th span:nth-child(1) div span {
+  display: none;
+}
+
+.data_table table:first-child tr td {
+  /* min-width: 200px; */
+}
+.data_table table:first-child tr td div {
+  text-align: center;
+}
+
+/*  */
+
+.data_table div:last-child tr:last-child td:last-child p {
+  margin-top: 15px;
+}
+
+.buttonDiv {
+  display: flex;
+  gap: 10px;
+  margin: 20px;
+}
+
+.buttonDiv button {
+  display: flex;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s all;
+}
+
+.buttonDiv button:hover {
+  opacity: 0.7;
+}
+
+.deleteBtn {
+  background-color: #002884;
+}
+
+.editBtn {
+  background-color: #ba000d;
+}
+
+.data_table table {
+}
+
+.data_table table th {
+  background-color: #f4f5fd;
+  border-top: 3px solid #dcdef1;
+  border-bottom: 3px solid #dcdef1;
+}
+
+.data_table table th * {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #3b3e66;
+}
+
+.data_table table td {
+  cursor: pointer;
+}
+.data_table table td * {
+  font-size: 0.8rem;
+}
+
+.data_table table:first-child td:first-child * {
+  font-size: 1.5rem;
+}
+.data_table table:first-child th:first-child * {
+  font-size: 1.5rem;
+}
+
+.data_table div div:first-child {
+  max-height: 63px;
+}

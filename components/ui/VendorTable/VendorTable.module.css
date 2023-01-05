@@ -1,0 +1,7 @@
+.card_body {
+  width: 100%;
+}
+
+.add_vendor_link {
+  display: flex;
+}

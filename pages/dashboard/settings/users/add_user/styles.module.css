@@ -1,0 +1,74 @@
+.navbar_bg {
+  height: 80px;
+}
+
+.container {
+  width: 100%;
+  height: calc(100vh - 81px);
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f4f5fd;
+  gap: 20px;
+}
+.wrapper {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.breadcrumb_div {
+  margin: 40px 0px 10px 0px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  height: max-content;
+}
+
+.breadcrumb_div h1 {
+  margin-top: 20px;
+  font-size: 1.8rem;
+}
+.breadcrumb_div p {
+  color: #808080;
+}
+
+.breadcrumb_div * {
+  margin: 0px;
+  padding: 0px;
+}
+
+.add_user_div {
+  width: 45%;
+}
+.add_user_div > form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}
+.input_wrapper > label {
+  margin: 5px;
+}
+
+.input_wrapper > div > input {
+  height: 40px;
+}
+
+.add_user_rights_div {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.check_box_div {
+}
+.checkbox_sub_div {
+  margin-left: 30px;
+}

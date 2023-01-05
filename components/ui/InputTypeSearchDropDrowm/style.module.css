@@ -1,0 +1,8 @@
+.container {
+  position: relative;
+}
+
+.container input {
+  height: 42px;
+  font-size: 1rem;
+}

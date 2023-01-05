@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+.container p {
+  text-transform: capitalize;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: rgb(170, 169, 169);
+  margin: 0px 15px;
+}
+.container a {
+  text-transform: capitalize;
+  color: #3b3e66;
+  margin: 0px 15px;
+}
+.container li:nth-child(1) a {
+  margin: 0px 15px 0px 0px;
+}

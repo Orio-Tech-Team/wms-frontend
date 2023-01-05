@@ -1,0 +1,62 @@
+.container {
+  min-height: 78px;
+  max-height: 78px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  background-color: #fefeff;
+  z-index: 998;
+  box-shadow: 8px -2px 10px 0px #8d8d8d;
+}
+
+.container.active {
+  width: calc(100% - 260px);
+}
+
+.wrapper {
+  width: 95%;
+  padding: 10px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.section1 {
+  display: flex;
+  align-items: center;
+}
+.section2 {
+  display: flex;
+  gap: 20px;
+}
+
+.toggler_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  padding: 5px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.vr {
+  margin: 0px 10px;
+  height: 36px;
+  border: 1px solid rgb(185, 183, 183);
+}
+
+.search_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  padding: 5px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
